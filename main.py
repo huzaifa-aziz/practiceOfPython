@@ -1,18 +1,26 @@
-a= 5
-b = 5
+def calculate_rectangle_area(length, width):
+    """
+    Calculate the area of a rectangle.
 
-print(a * b)
+    Args:
+    - length (float): The length of the rectangle.
+    - width (float): The width of the rectangle.
 
-name = "sam"
-print(type(name))
+    Returns:
+    - float: The area of the rectangle.
+    """
+    return length * width
 
-age = 25
-print(type(age))
+def main():
+    # Get input from the user
+    length = float(input("Enter the length of the rectangle: "))
+    width = float(input("Enter the width of the rectangle: "))
 
+    # Calculate the area
+    area = calculate_rectangle_area(length, width)
 
-_class = 11
-print(type(_class))
+    # Display the result
+    print("The area of the rectangle is:", area)
 
-
-percentage = 66.0
-print(type(percentage))
+if __name__ == "__main__":
+    main()
